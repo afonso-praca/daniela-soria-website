@@ -445,7 +445,7 @@ li {
     height: 100%;
     margin-bottom: 0rem;
     text-align: center;
-    color: #fff;
+    color: #666;
     background: rgb(0, 153, 204) no-repeat center center;
     background-size: cover;
 }
@@ -478,6 +478,7 @@ li {
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
+		color: #CCC;
 }
 
 .blog-description {
@@ -784,18 +785,18 @@ a.fn-item.active {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 1.5em;
-    color: #BBC7CC;
+		color: #999;
     text-align: center;
-    background: #22343A;
+    background: #CCC;
 }
 
 .site-footer a {
-    color: #BBC7CC;
-    text-decoration: underline;
+    color: #666;
+    text-decoration: none;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #333;
 }
 
 .poweredby .i-ghost {
