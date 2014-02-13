@@ -445,8 +445,8 @@ li {
     height: 100%;
     margin-bottom: 0rem;
     text-align: center;
-    color: #666;
-    background: rgb(0, 153, 204) no-repeat center center;
+    color: #FFF;
+    background: rgb(255, 255, 255) no-repeat center center;
     background-size: cover;
 }
 
