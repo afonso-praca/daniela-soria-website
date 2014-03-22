@@ -2,7 +2,8 @@
  * Main JS file for GhostScroll behaviours
  */
 var $post = $('.post'), 
-	$first = $('.post.first'), 
+	$first = $('.post.first'),
+	$second = $('.post');
 	$last = $('.post.last'), 
 	$fnav = $('.fixed-nav'),
 	$postholder = $('.post-holder'),
@@ -14,35 +15,44 @@ var $post = $('.post'),
     "use strict";
     function srcTo (el) {
     	$('html, body').animate({
-			scrollTop: el.offset().top
-		}, 1000);
+				scrollTop: el.offset().top
+      }, 1000);
     }
     $(document).ready(function(){
      
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
-                    'background': '#0099cc',
-                    'color'     : 'white',
-                })
-        })
+	            'background': '#7070b1',
+	            'color'     : 'white'
+            });
+        });
 
         $postafter.each(function (e) {
-        	var bg = $(this).parent().css('background-color')
-        	$(this).css('border-top-color', bg)
-
+        	var bg = $(this).parent().css('background-color');
+        	$(this).css('border-top-color', bg);
         	if(e % 2 == 0)
         		$(this).css('left', '6%')
-
-        })
+        });
         
 
         $('.btn.first').click( function () {
-        	srcTo ($first)
-        })
+	        console.log($first);
+        	srcTo($first);
+        });
+
+		    $('.btn.second').click( function () {
+			    srcTo ($($("body").find(".post")[1]));
+		    });
+
+	    $('.btn.third').click( function () {
+		    srcTo ($($("body").find(".post")[2]));
+	    });
+
         $('.btn.last').click( function () {
         	srcTo ($last)
-        })
+        });
+
         $('#header-arrow').click(function () {
             srcTo ($first)
         })
