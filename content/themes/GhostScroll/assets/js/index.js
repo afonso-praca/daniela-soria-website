@@ -16,7 +16,7 @@ var $post = $('.post'),
     function srcTo (el) {
     	$('html, body').animate({
 				scrollTop: el.offset().top
-      }, 1000);
+      }, 1200);
     }
     $(document).ready(function(){
      
